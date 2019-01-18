@@ -1,0 +1,254 @@
+/*
+ Theme Name:   HPX
+ Theme URI:    http://halifaxpopexplosion.com
+ Description:  HPX custom theme
+ Author:       Matt
+ Author URI:   http://mspacecreative.com
+ Template:     Divi
+ Version:      1.0
+*/
+
+* {
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+@media (min-width: 981px) {
+	.et_vertical_nav #page-container #main-header {
+		width: 184px;
+		padding-top: 18px;
+		background: #f9f9f9;
+	}
+	.et_vertical_nav #et-main-area {
+		margin-left: 184px!important;
+	}
+	#main-header.et-fixed-header, .et_vertical_nav #page-container #main-header {
+		box-shadow: none!important;
+	}
+	#et-top-navigation a {
+		font-family: Oswald;
+		font-weight: 700;
+		font-style: normal;
+		font-size: 16px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		line-height: 1.25em;
+		color: #000;
+	}
+	.et_vertical_nav.et_header_style_centered header#main-header #top-menu>li>a, .et_vertical_nav.et_header_style_centered header#main-header.et-fixed-header #top-menu>li>a {
+		padding: 15px 0;
+		margin: 0;
+	}
+	#et-top-navigation a:after {
+		width: 80px;
+		content: '';
+		height: 1px;
+		background: #000;
+		text-align: center;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		margin-left: -40px;
+	}
+	
+	#et-top-navigation li:last-child a:after {
+		display: none;
+	}
+}
+
+#hero .et_pb_gallery .et-pb-controllers {
+	display: none;
+}
+
+#hero .et_pb_gallery a {
+	pointer-events: none;
+}
+
+#hero .et-pb-slider-arrows {
+	display: none;
+}
+
+.page-title h1 {
+	font-family: fatfrank, sans-serif;
+	font-weight: 900;
+	font-style: normal;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 80px;
+}
+
+/* =============================================
+STICKY BAR
+==============================================*/
+
+.sticky-bar {
+	background: rgba(255, 255, 255, .68);
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+.sticky-bar-inner {
+	margin-left: 184px;
+	text-align: center;
+}
+
+.sticky-bar-inner-center {
+	max-width: 850px;
+	margin: auto;
+}
+
+.sticky-bar-button.first {
+	float: left;
+	padding: 8px 17px;
+}
+
+.sticky-bar-button.last {
+	float: right;
+	padding: 8px 17px;
+}
+
+.sticky-bar-button a {
+	background-color: #3fc1c0;
+	border-color: #3fc1c0;
+	color: #fff;
+	padding: 6px 20px;
+	font-family: Oswald;
+	font-size: 20px;
+	font-weight: 400;
+	font-style: normal;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	display: block;
+	line-height: normal;
+}
+
+/* =============================================
+END STICKY BAR
+==============================================*/
+
+.entry-content h1 {
+	font-family: fatfrank;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 50px;
+	letter-spacing: .08em;
+	margin: 0 0 30px;
+}
+
+.entry-content h2 {
+	font-family: fatfrank;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 50px;
+	letter-spacing: .08em;
+	text-transform: none;
+	font-size: 37.5px;
+	margin: 0 0 25px;
+}
+
+.entry-content .et_pb_bg_layout_light p {
+	color: rgba(17,17,17,.6);
+}
+
+.entry-content p {
+	font-size: 19px;
+	font-family: proxima-nova;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: .01em;
+	text-transform: none;
+	line-height: 1.75em;
+}
+
+.et_pb_button.cta_button, .et_pb_button.cta_button_light, .cta_button_light {
+	font-family: Oswald;
+	transition: all 0.25s ease-in-out;
+}
+
+.et_pb_button.cta_button, .cta_button {
+	color: #fff;
+	border: 2px solid #45c1c0;
+}
+
+.cta-button, .cta_button_light {
+	padding: 21px 34px;
+	display: inline-block;
+	margin-top: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.et_pb_button.cta_button_light, .cta_button_light {
+	color: #45c1c0;
+	border: 2px solid #fff;
+	background: #fff;
+}
+
+body #page-container .et_pb_button.cta_button:hover, .cta_button:hover {
+	transition: all 0.25s ease-in-out;
+	background: #fff;
+	color: #45c1c0;
+}
+
+body #page-container .et_pb_button.cta_button_light:hover, .cta_button_light:hover {
+	background: none;
+	color: #fff;
+	border: 2px solid #fff;
+}
+
+.artist-thumb {
+	position: relative;
+	width: 14.583%;
+	float: left;
+	margin: 0 2.5% 2.5% 0;
+}
+
+.artist-thumb img {
+	display: block;
+}
+
+.artist-thumb:nth-child(6n), .sponsor-logo:nth-child(6n) {
+	margin-right: 0;
+}
+
+.artist-thumb:nth-child(6n+1):nth-last-child(-n+6),
+.artist-thumb:nth-child(6n+1):nth-last-child(-n+6) ~ div {
+    margin-bottom: 0;
+}
+
+.entry-content p.artist-name {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(255,255,255,.7);
+	font-size: 17px;
+	text-align: center;
+	color: #000;
+	padding: 10px!important;
+	text-transform: uppercase;
+	line-height: 1.25em;
+}
+
+.entry-content ul.sponsor-logos-list {
+	list-style: none;
+	font-size: 0;
+}
+
+.sponsor-logo {
+	display: inline-block;
+	vertical-align: middle;
+	width: 14.583%;
+	margin: 0 2.5% 2.5% 0;
+}
+
+.sponsor-logo img {
+	padding: 20px;
+}
+
+.et_pb_equal_columns .et_pb_column .et_pb_module {
+	height: 100%;
+}
