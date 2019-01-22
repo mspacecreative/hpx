@@ -96,10 +96,36 @@ function artistsLoop() {
 	return ob_get_clean();
 }
 
+function artistsLoopFull() {
+	ob_start();
+		get_template_part('includes/loops/loop-artists-full');
+	return ob_get_clean();
+}
+
+function comediansLoopFull() {
+	ob_start();
+		get_template_part('includes/loops/loop-comedians-full');
+	return ob_get_clean();
+}
+
 // SPONSOR LOGO ON HOME PAGE
 function sponsorLogos() {
 	ob_start();
 		get_template_part('includes/sponsor-logos-home');
+	return ob_get_clean();
+}
+
+// SPONSOR LOGOS IN FOOTER
+function sponsorLogosFooter() {
+	ob_start();
+		get_template_part('includes/sponsor-logos-footer');
+	return ob_get_clean();
+}
+
+// SPONSOR LOGOS ON SPONSOR PAGE
+function sponsorPageLogos() {
+	ob_start();
+		get_template_part('includes/sponsor-page-logos');
 	return ob_get_clean();
 }
 
@@ -138,7 +164,11 @@ add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles');
 add_action('init', 'footer_scripts');
 add_option( 'my_default_pic', get_stylesheet_directory_uri() . '/img/wood-frame-bg.jpg', '', 'yes' );
 add_shortcode( 'artists_list', 'artistsLoop' );
+add_shortcode( 'artists_list_full', 'artistsLoopFull' );
+add_shortcode( 'comedian_list', 'comediansLoopFull' );
 add_shortcode( 'sponsor_logos_home', 'sponsorLogos' );
+add_shortcode( 'sponsor_page_logos', 'sponsorPageLogos' );
+add_shortcode( 'sponsor_logos_footer', 'sponsorLogosFooter' );
 add_action( 'widgets_init', 'posts_sidebar' );
 add_action( 'widgets_init', 'remove_FooterArea6', 11 );
 

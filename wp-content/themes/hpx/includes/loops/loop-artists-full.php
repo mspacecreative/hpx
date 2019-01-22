@@ -12,7 +12,7 @@
 	        'post_type' => 'marcato_artist', 
 	        'orderby'=> 'title', 
 	        'order' => 'ASC', 
-	        'posts_per_page' => 24 
+	        'posts_per_page' => -1 
 	      )
 	    );
 	    while ( $loop->have_posts() ) : $loop->the_post();
