@@ -129,6 +129,13 @@ function sponsorPageLogos() {
 	return ob_get_clean();
 }
 
+// MAILCHIMP FORM
+function mailChimpForm() {
+	ob_start();
+		get_template_part('includes/forms/mailchimp_form');
+	return ob_get_clean();
+}
+
 // CUSTOM STYLES TO TINY MCE
 function wpb_mce_buttons_2($buttons) {
     array_unshift($buttons, 'styleselect');
@@ -163,16 +170,17 @@ function my_mce_before_init_insert_formats( $init_array ) {
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles');
 add_action('init', 'footer_scripts');
 add_option( 'my_default_pic', get_stylesheet_directory_uri() . '/img/wood-frame-bg.jpg', '', 'yes' );
+add_action( 'widgets_init', 'posts_sidebar' );
+add_action( 'widgets_init', 'remove_FooterArea6', 11 );
+
+// SHORTCODES
 add_shortcode( 'artists_list', 'artistsLoop' );
 add_shortcode( 'artists_list_full', 'artistsLoopFull' );
 add_shortcode( 'comedian_list', 'comediansLoopFull' );
 add_shortcode( 'sponsor_logos_home', 'sponsorLogos' );
 add_shortcode( 'sponsor_page_logos', 'sponsorPageLogos' );
+add_shortcode( 'mailchimp_form', 'mailChimpForm' );
 add_shortcode( 'sponsor_logos_footer', 'sponsorLogosFooter' );
-add_action( 'widgets_init', 'posts_sidebar' );
-add_action( 'widgets_init', 'remove_FooterArea6', 11 );
-
-// SHORTCODES
 //add_shortcode('content_block', 'content_blocks');
 
 // CUSTOM THUMBNAIL IN BACKEND
