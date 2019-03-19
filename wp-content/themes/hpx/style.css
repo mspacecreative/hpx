@@ -169,7 +169,7 @@ STICKY BAR
 END STICKY BAR
 ==============================================*/
 
-.entry-content h1 {
+.entry-content h1, #content-area h1 {
 	font-family: fatfrank;
 	font-weight: 700;
 	font-style: normal;
