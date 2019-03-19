@@ -131,6 +131,27 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 									do_action( 'et_before_content' );
 			
 									the_content();
+									
+									// SOCIAL MEDIA BUTTONS
+									if( have_rows('social_media_accounts') ): ?>
+									
+										<ul>
+									
+									 	<?php while ( have_rows('social_media_accounts') ) : the_row(); ?>
+									
+									        <li>
+												<a href="<?php the_sub_field('platform_link'); ?>"><?php the_sub_field('platform_icon'); ?></a>
+											</li>
+									
+									    <?php endwhile; ?>
+										
+										</ul>
+									
+									<?php else :
+									
+									    // no rows found
+									
+									endif;
 			
 									wp_link_pages( array( 'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'Divi' ), 'after' => '</div>' ) );
 								?>
