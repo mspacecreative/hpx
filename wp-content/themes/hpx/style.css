@@ -584,7 +584,7 @@ footer p {
 	.timeline-container .et_pb_column {
 		margin-bottom: 0;
 	}
-	.timeline-container .et_pb_space {
+	.timeline-container .et_pb_equal_columns .et_pb_column .et_pb_module.et_pb_space {
 		height: 0;
 	}
 }
