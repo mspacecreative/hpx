@@ -546,6 +546,7 @@ footer p {
 	}
 	.single .et_post_meta_wrapper {
 		flex-basis: 48%;
+		margin-top: 12px;
 	}
 	
 	.single .entry-content {
