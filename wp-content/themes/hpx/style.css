@@ -446,6 +446,10 @@ footer p {
 	width: 100%;
 }
 
+.et_builder_inner_content .et_pbe_row:first-of-type {
+	width: 90%;
+}
+
 @media (max-width: 1023px) {
 	.mailchimp-container #mc_embed_signup .mc-field-group {
 		width: 30%;
