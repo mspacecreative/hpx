@@ -159,6 +159,12 @@ function my_mce_before_init_insert_formats( $init_array ) {
             'classes' => 'cta_button',
             'wrapper' => true,
         ),
+        array(  
+            'title' => 'Yellow Heading',  
+            'block' => 'h2',  
+            'classes' => 'yellow-heading',
+            'wrapper' => true,
+        ),
     );  
     $init_array['style_formats'] = json_encode( $style_formats );  
      
