@@ -140,7 +140,9 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 									 	<?php while ( have_rows('social_media_accounts') ) : the_row(); ?>
 									
 									        <li>
-												<a href="<?php the_sub_field('platform_link'); ?>"><?php the_sub_field('platform_icon'); ?></a>
+												<a href="<?php the_sub_field('platform_link'); ?>">
+													<i class="fa <?php the_sub_field('platform_icon'); ?>"></i>
+												</a>
 											</li>
 									
 									    <?php endwhile; ?>
