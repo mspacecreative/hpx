@@ -584,6 +584,9 @@ footer p {
 	.timeline-container .et_pb_column {
 		margin-bottom: 0;
 	}
+	.timeline-container .et_pb_space {
+		height: 0;
+	}
 }
 
 @media (max-width: 1024px) and (orientation: portrait) {
