@@ -466,6 +466,12 @@ footer p {
 	color: #fff;
 }
 
+.social_media_buttons li {
+	list-style: none;
+	display: inline-block;
+	padding: 15px;
+}
+
 @media (max-width: 1023px) {
 	.mailchimp-container #mc_embed_signup .mc-field-group {
 		width: 30%;

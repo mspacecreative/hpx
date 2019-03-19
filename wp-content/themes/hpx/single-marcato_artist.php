@@ -135,7 +135,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 									// SOCIAL MEDIA BUTTONS
 									if( have_rows('social_media_accounts') ): ?>
 									
-										<ul>
+										<ul class="social_media_buttons">
 									
 									 	<?php while ( have_rows('social_media_accounts') ) : the_row(); ?>
 									
