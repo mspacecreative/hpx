@@ -459,6 +459,13 @@ footer p {
 	width: 100%;
 }
 
+.fa-stack {
+	text-align: center;
+	border-radius: 100px;
+	background: #eccd17;
+	color: #fff;
+}
+
 @media (max-width: 1023px) {
 	.mailchimp-container #mc_embed_signup .mc-field-group {
 		width: 30%;

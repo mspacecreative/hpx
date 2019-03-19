@@ -141,7 +141,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 									
 									        <li>
 												<a href="<?php the_sub_field('platform_link'); ?>" target="_blank">
-													<i class="fa <?php the_sub_field('platform_type'); ?>"></i>
+													<i class="fa fa-stack <?php the_sub_field('platform_type'); ?>"></i>
 												</a>
 											</li>
 									
