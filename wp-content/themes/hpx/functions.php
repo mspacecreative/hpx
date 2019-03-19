@@ -161,7 +161,7 @@ function my_mce_before_init_insert_formats( $init_array ) {
         ),
         array(  
             'title' => 'Yellow Heading',  
-            'block' => 'h2',  
+            'block' => 'span',  
             'classes' => 'yellow-heading',
             'wrapper' => true,
         ),
