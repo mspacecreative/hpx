@@ -21,6 +21,10 @@ html {
 	color: #666;
 }
 
+.single-marcato_artist.et_right_sidebar #main-content .container:before {
+	display: none;
+}
+
 #top-menu a, #top-menu .sub-menu a {
 	display: inline-block;
 }
