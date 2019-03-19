@@ -140,8 +140,8 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 									 	<?php while ( have_rows('social_media_accounts') ) : the_row(); ?>
 									
 									        <li>
-												<a href="<?php the_sub_field('platform_link'); ?>">
-													<i class="fa <?php the_sub_field('platform_icon'); ?>"></i>
+												<a href="<?php the_sub_field('platform_link'); ?>" target="_blank">
+													<i class="fa <?php the_sub_field('platform_type'); ?>"></i>
 												</a>
 											</li>
 									
@@ -154,6 +154,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 									    // no rows found
 									
 									endif;
+									// END SOCIAL MEDIA BUTTONS
 			
 									wp_link_pages( array( 'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'Divi' ), 'after' => '</div>' ) );
 								?>
