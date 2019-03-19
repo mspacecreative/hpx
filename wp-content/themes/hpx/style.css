@@ -470,6 +470,13 @@ footer p {
 		margin-right: 0;
 	}
 	
+	.entry-content .page-title h1 {
+		font-size: 70px;
+	}
+	.entry-content h1 {
+		font-size: 70px;
+	}
+	
 	.mailchimp-container #mc_embed_signup .mc-field-group {
 		padding-bottom: 3%;
 	}
