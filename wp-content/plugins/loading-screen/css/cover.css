@@ -1,0 +1,45 @@
+#cover {
+  background: #000;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 999999;
+}
+
+.loader-container {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 30px;
+	height: 30px;
+	margin-left: -15px;
+	margin-top: -15px;
+}
+
+.heart {
+	animation: beat 2s infinite;
+}
+
+@keyframes beat {
+	from {
+		transform: scale(1);
+		transform-origin: center center;
+		animation-timing-function: ease-out;
+	}
+	10% {
+		transform: scale(1.1);
+		animation-timing-function: ease-in;
+	}
+	15% {
+		transform: scale(1);
+		animation-timing-function: ease-out;
+	}
+	25% {
+		transform: scale(1.05);
+		animation-timing-function: ease-in;
+	}
+  35% {
+    transform: scale(1);
+		animation-timing-function: ease-out;
+  }
+}
