@@ -580,6 +580,10 @@ footer p {
 		left: 50%;
 		transform: translate(-50%,-50%);
 	}
+	
+	.timeline-container .et_pb_column {
+		margin-bottom: 0;
+	}
 }
 
 @media (max-width: 1024px) and (orientation: portrait) {
