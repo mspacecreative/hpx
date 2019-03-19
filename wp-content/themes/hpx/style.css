@@ -551,6 +551,7 @@ footer p {
 	.single .entry-content {
 		flex-basis: 48%;
 		margin-right: 4%;
+		padding: 0;
 	}
 }
 
