@@ -244,7 +244,6 @@ body #page-container .et_pb_button.cta_button_light.solid_white:hover {
 }
 
 body #page-container .et_pb_button.cta_button.green_outlined:hover, .cta_button:hover {
-	transition: all 0.25s ease-in-out;
 	background: #45c1c0;
 	color: #fff!important;
 }
