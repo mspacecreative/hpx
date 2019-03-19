@@ -69,6 +69,10 @@ html {
 	display: none;
 }
 
+.et_pb_row {
+	width: 90%;
+}
+
 #hero .et_pb_gallery a {
 	pointer-events: none;
 }
