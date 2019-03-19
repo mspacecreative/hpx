@@ -446,10 +446,6 @@ footer p {
 	width: 100%;
 }
 
-.et_builder_inner_content .et_pb_section:first-of-type .et_pb_row {
-	width: 90%;
-}
-
 @media (max-width: 1023px) {
 	.mailchimp-container #mc_embed_signup .mc-field-group {
 		width: 30%;
@@ -475,7 +471,7 @@ footer p {
 	}
 	
 	.entry-content .page-title h1 {
-		font-size: 65px;
+		font-size: 50px;
 	}
 	.entry-content h1 {
 		font-size: 40px;
