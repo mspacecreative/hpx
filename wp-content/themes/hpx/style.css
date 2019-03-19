@@ -466,6 +466,12 @@ footer p {
 	color: #fff;
 }
 
+.social_media_buttons {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
 .social_media_buttons li {
 	list-style: none;
 	display: inline-block;
