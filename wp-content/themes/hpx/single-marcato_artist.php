@@ -40,6 +40,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 							?>
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'et_pb_post' ); ?>>
 								<h1 class="entry-title"><?php the_title(); ?></h1>
+								<div class="clearfix">
 								<?php if ( ( 'off' !== $show_default_title && $is_page_builder_used ) || ! $is_page_builder_used ) { ?>
 									<div class="et_post_meta_wrapper">
 			
@@ -157,6 +158,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 									}
 								?>
 								</div> <!-- .et_post_meta_wrapper -->
+								</div> <!-- end clearfix -->
 							</article> <!-- .et_pb_post -->
 			
 						<?php endwhile; ?>

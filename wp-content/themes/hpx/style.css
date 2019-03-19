@@ -519,6 +519,16 @@ footer p {
 	.et_vertical_nav #main-header #top-menu li:last-child {
 		border-bottom: none;
 	}
+	.single .et_post_meta_wrapper {
+		float: left;
+		width: 48%;
+		margin-right: 4%;
+	}
+	
+	.single .entry-content {
+		float: left;
+		width: 48%;
+	}
 }
 
 @media (max-width: 980px) {
