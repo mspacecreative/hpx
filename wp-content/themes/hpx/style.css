@@ -474,7 +474,8 @@ footer p {
 		font-size: 40px;
 	}
 	.entry-content h1 {
-		font-size: 40px;
+		font-size: 38px;
+		letter-spacing: 0.05em;
 	}
 	
 	.mailchimp-container #mc_embed_signup .mc-field-group {
