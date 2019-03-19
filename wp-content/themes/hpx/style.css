@@ -544,12 +544,12 @@ footer p {
 		flex-wrap: wrap;
 		flex-direction: row-reverse;
 	}
-	.single .et_post_meta_wrapper {
+	.single-marcato_artist .et_post_meta_wrapper {
 		flex-basis: 48%;
 		margin-top: 12px;
 	}
 	
-	.single .entry-content {
+	.single-marcato_artist .entry-content {
 		flex-basis: 48%;
 		margin-right: 4%;
 		padding: 0;
