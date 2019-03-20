@@ -270,7 +270,7 @@ body #page-container .et_pb_button.cta_button.green_txt_button:hover, .cta_butto
 
 .artist-thumb {
 	position: relative;
-	width: 14.583%;
+	width: 18%;
 	float: left;
 	margin: 0 2.5% 2.5% 0;
 }
@@ -281,12 +281,12 @@ body #page-container .et_pb_button.cta_button.green_txt_button:hover, .cta_butto
 	height: auto;
 }
 
-.artist-thumb:nth-child(6n), .sponsor-logo:nth-child(6n) {
+.artist-thumb:nth-child(5n), .sponsor-logo:nth-child(5n) {
 	margin-right: 0;
 }
 
-.artist-thumb:nth-child(6n+1):nth-last-child(-n+6),
-.artist-thumb:nth-child(6n+1):nth-last-child(-n+6) ~ div {
+.artist-thumb:nth-child(5n+1):nth-last-child(-n+5),
+.artist-thumb:nth-child(5n+1):nth-last-child(-n+5) ~ div {
     margin-bottom: 0;
 }
 
