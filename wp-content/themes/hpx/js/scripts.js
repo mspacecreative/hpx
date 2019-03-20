@@ -18,7 +18,7 @@ function heroHeight() {
 }
 
 if ($('.artist-videos').children().length === 1 ) {
-	$(this).css('flex-basis', '100%');
+	$('.artist-videos').children().css('flex-basis', '100%');
 }
 
 $(document).ready(function () {
