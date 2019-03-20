@@ -130,9 +130,9 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 								<?php
 									do_action( 'et_before_content' );
 			
-									if ( has_excerpt( $post->ID ) ): ?>
-										<p><?php echo the_excerpt(); ?></p>
-									<?php endif;
+									if ( has_excerpt( $post->ID ) ) {
+										echo the_excerpt();
+									}
 									
 									the_content();
 									
