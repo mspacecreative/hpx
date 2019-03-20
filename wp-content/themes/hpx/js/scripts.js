@@ -17,7 +17,7 @@ function heroHeight() {
 	$('#hero, .et_pb_gallery_fullwidth .et_pb_gallery_image img').height($(window).height());
 }
 
-if ($('.artist_videos li:only-child')) {
+if ($('.artist-videos li:only-child')) {
 	$(this).css('flex-basis', '100%');
 }
 
