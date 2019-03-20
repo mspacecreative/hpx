@@ -18,11 +18,11 @@ function heroHeight() {
 }
 
 function artistVideos() {
-	var children = $('.artist-videos li').length;
+	//var children = $('.artist-videos li').length;
 	var videos = $('.artist-videos li');
-	if (children < 2 ) {
+	/*if (children < 2 ) {
 		videos.css('flex-basis', '100%');
-	}
+	}*/
 	videos.css('flex-basis', '100%');
 }
 
