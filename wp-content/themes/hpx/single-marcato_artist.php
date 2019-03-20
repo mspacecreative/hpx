@@ -187,6 +187,21 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 								?>
 								</div> <!-- .et_post_meta_wrapper -->
 								</div> <!-- end clearfix -->
+								
+								<!-- ARTIST VIDEOS -->
+								<?php if( have_rows('artist_videos') ): ?>
+								
+								<ul class="artist-videos">
+									
+									<?php while ( have_rows('artist_videos') ) : the_row(); ?>
+									<li>[embed]<?php the_sub_field('artist_video'); ?>[/embed]</li>
+									<?php endwhile; ?>
+									
+								</ul>
+								
+								<?php endif; ?>
+								<!-- END ARTIST VIDEOS -->
+								
 							</article> <!-- .et_pb_post -->
 			
 						<?php endwhile; ?>
