@@ -17,6 +17,10 @@ function heroHeight() {
 	$('#hero, .et_pb_gallery_fullwidth .et_pb_gallery_image img').height($(window).height());
 }
 
+if ($('.artist_video:only-child')) {
+	$(this).css('flex-basis', '100%');
+}
+
 $(document).ready(function () {
 	cptMainContentHeight();
 	heroHeight();
