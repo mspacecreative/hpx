@@ -194,7 +194,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 								<ul class="artist-videos">
 									
 									<?php while ( have_rows('artist_videos') ) : the_row(); ?>
-									<li>[embed]<?php the_sub_field('artist_video'); ?>[/embed]</li>
+									<li><?php the_sub_field('artist_video'); ?></li>
 									<?php endwhile; ?>
 									
 								</ul>
