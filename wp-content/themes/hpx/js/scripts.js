@@ -21,6 +21,8 @@ if ($('.artist-videos li:only-child')) {
 	$(this).css('flex-basis', '100%');
 }
 
+$('.artist-videos li:only-child').css('flex-basis', '100%');
+
 $(document).ready(function () {
 	cptMainContentHeight();
 	heroHeight();
