@@ -17,22 +17,22 @@ function heroHeight() {
 	$('#hero, .et_pb_gallery_fullwidth .et_pb_gallery_image img').height($(window).height());
 }
 
-function artistVideos() {
+/*function artistVideos() {
 	var children = $('.artist-videos li').length;
 	var videos = $('.artist-videos li');
 	if (children < 2 ) {
 		videos.css('flex-basis', '100%');
 	}
-}
+}*/
 
 $(document).ready(function () {
 	cptMainContentHeight();
 	heroHeight();
 });
 
-$(window).load(function () {
+/*$(window).load(function () {
 	artistVideos();
-});
+});*/
 
 $(window).resize(function () {
 	cptMainContentHeight();
