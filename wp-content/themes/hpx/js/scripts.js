@@ -17,8 +17,10 @@ function heroHeight() {
 	$('#hero, .et_pb_gallery_fullwidth .et_pb_gallery_image img').height($(window).height());
 }
 
-if ($('.artist-videos').children().length < 2 ) {
-	$('.artist-videos').children().css('flex-basis', '100%');
+var children = $('.artist-videos > li').length
+
+if (children < 2 ) {
+	$('.artist-videos > li').css('flex-basis', '100%');
 }
 
 $(document).ready(function () {
