@@ -23,6 +23,7 @@ function artistVideos() {
 	if (children < 2 ) {
 		videos.css('flex-basis', '100%');
 	}
+	videos.css('flex-basis', '100%');
 }
 
 $(document).ready(function () {
