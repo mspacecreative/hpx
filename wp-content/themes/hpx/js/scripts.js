@@ -17,15 +17,13 @@ function heroHeight() {
 	$('#hero, .et_pb_gallery_fullwidth .et_pb_gallery_image img').height($(window).height());
 }
 
-if ($('.artist-videos li:only-child')) {
+if ($('.artist-videos').children().length === 1 ) {
 	$(this).css('flex-basis', '100%');
 }
 
 $(document).ready(function () {
 	cptMainContentHeight();
 	heroHeight();
-	
-	$('.artist-videos li:only-child').css('flex-basis', '100%');
 });
 
 $(window).resize(function () {
