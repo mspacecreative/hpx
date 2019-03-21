@@ -723,3 +723,105 @@ footer p {
 		height: auto!important;
 	}
 }
+
+/*------------------------------------
+MASONRY STYLES
+-------------------------------------*/
+
+/*.artist-grid img {
+	width: 100%;
+	height: auto;
+	display: block;
+	max-width: 100%;
+	position: absolute;
+	width: 70px;
+	top: -35px;
+	left: 50%;
+	margin-left: -35px;
+	background: #fff;
+	padding: 10px;
+	z-index: 1;
+}*/
+
+.artist-grid {
+	width: 100%;
+	margin: auto;
+}
+
+.grid-item.hover:before {
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.25s ease-in-out;
+	background: rgba(0, 0, 0, .75);
+}
+
+.fa.fa-picture-o, .fa.fa-external-link {
+	position: absolute;
+	transition: all 0.25s ease-in-out;
+	top: 50%;
+	color: #fff;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1;
+}
+
+.fa.fa-picture-o {
+	transform: translateY(-50%);
+	left: 32.5%;
+	font-size: 30px;
+}
+
+.fa.fa-external-link {
+	transform: translateY(-48%);
+	right: 32.5%;
+	font-size: 33px;
+}
+
+.grid-item:before {
+	position: absolute;
+	visibility: hidden;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background: rgba(0, 0, 0, .75);
+	transition: all 0.25s ease-in-out;
+	left: 0;
+	top: 0;
+	content: '';
+	z-index: 1;
+}
+
+/* ---- grid ---- */
+
+.gutter-sizer {
+	width: 3%;
+}
+
+/* clear fix */
+.artist-grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-item {
+	margin-bottom: 6%;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 22.75%;
+}
+
+.grid-item {
+	margin-bottom: 3%;
+}
+
+@media (max-width: 800px) {
+.grid-sizer, .grid-item {
+	width: 48.5%;
+	margin-bottom: 2.5%;
+}
+}

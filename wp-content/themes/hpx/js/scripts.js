@@ -28,6 +28,13 @@ function heroHeight() {
 $(document).ready(function () {
 	cptMainContentHeight();
 	heroHeight();
+	
+	$('.artist-grid').masonry({
+		itemSelector: '.grid-item',
+		columnWidth: '.grid-sizer',
+		gutter: '.gutter-sizer',
+		percentPosition: true
+	});
 });
 
 /*$(window).load(function () {

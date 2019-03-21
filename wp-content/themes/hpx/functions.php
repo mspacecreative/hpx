@@ -37,11 +37,11 @@ function my_theme_enqueue_styles() {
 	wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
 	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( $parent_style ));
 	
-	wp_register_style('para-styles', get_stylesheet_directory_uri() . '/js/dzsparallaxer/dzsparallaxer.css', array(), '1.0', 'all');
-	wp_enqueue_style('para-styles');
+	//wp_register_style('para-styles', get_stylesheet_directory_uri() . '/js/dzsparallaxer/dzsparallaxer.css', array(), '1.0', 'all');
+	//wp_enqueue_style('para-styles');
 	
-	wp_register_style('animations', get_stylesheet_directory_uri() . '/css/animations.css', array(), '1.0', 'all');
-	wp_enqueue_style('animations');
+	//wp_register_style('animations', get_stylesheet_directory_uri() . '/css/animations.css', array(), '1.0', 'all');
+	//wp_enqueue_style('animations');
 	
 	wp_register_style('typekit', 'https://use.typekit.net/ese1iyj.css', array(), '1.0', 'all');
 	wp_enqueue_style('typekit');
@@ -51,17 +51,20 @@ function my_theme_enqueue_styles() {
 
 function footer_scripts() {
 	
-	wp_register_script('scripts', get_stylesheet_directory_uri() . '/js/scripts.js', array('jquery'), null, true);
-	wp_enqueue_script('scripts');
-	
-	wp_register_script('animate', get_stylesheet_directory_uri() . '/js/css3-animate-it.js', array('jquery'), null, true);
-	wp_enqueue_script('animate');
+	//wp_register_script('animate', get_stylesheet_directory_uri() . '/js/css3-animate-it.js', array('jquery'), null, true);
+	//wp_enqueue_script('animate');
 	
 	wp_register_script('fontawesome', 'https://use.fontawesome.com/6ccd600e51.js', array('jquery'), null, true);
 	wp_enqueue_script('fontawesome');
 	
-	wp_register_script('para-script', get_stylesheet_directory_uri() . '/js/dzsparallaxer/dzsparallaxer.js', array('jquery'), null, true);
-	wp_enqueue_script('para-script');
+	wp_enqueue_script( 'masonry-cdn', 'https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js', array( 'jquery' ), '1.0', true );
+	wp_enqueue_script('masonry-cdn');
+	
+	wp_register_script('scripts', get_stylesheet_directory_uri() . '/js/scripts.js', array('jquery'), null, true);
+	wp_enqueue_script('scripts');
+	
+	//wp_register_script('para-script', get_stylesheet_directory_uri() . '/js/dzsparallaxer/dzsparallaxer.js', array('jquery'), null, true);
+	//wp_enqueue_script('para-script');
 }
 
 /* ACF OPTIONS PAGE */
@@ -99,6 +102,12 @@ function artistsLoop() {
 function artistsLoopFull() {
 	ob_start();
 		get_template_part('includes/loops/loop-artists-full');
+	return ob_get_clean();
+}
+
+function artistsLoopFull2() {
+	ob_start();
+		get_template_part('includes/loops/loop-artists-full-2');
 	return ob_get_clean();
 }
 
@@ -182,6 +191,7 @@ add_action( 'widgets_init', 'remove_FooterArea6', 11 );
 // SHORTCODES
 add_shortcode( 'artists_list', 'artistsLoop' );
 add_shortcode( 'artists_list_full', 'artistsLoopFull' );
+add_shortcode( 'artists_list_full_2', 'artistsLoopFull2' );
 add_shortcode( 'comedian_list', 'comediansLoopFull' );
 add_shortcode( 'sponsor_logos_home', 'sponsorLogos' );
 add_shortcode( 'sponsor_page_logos', 'sponsorPageLogos' );
