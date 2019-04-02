@@ -23,6 +23,7 @@
 	border: none;
 	margin: 0;
 	border-radius: 4px;
+	cursor: pointer;
 }
 .cookies-content {
 	font-size: 14px;
