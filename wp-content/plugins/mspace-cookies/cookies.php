@@ -15,7 +15,7 @@
  
  function cookies_Plugin() {
  		ob_start(); ?>
- 			<div id="cookies" class="cookies" style="display: block;">
+ 			<div class="cookies">
  				<div class="cookies-inner clearfix">
  					<div class="cookies-content">
  						<p>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>

@@ -1,7 +1,3 @@
-#cookies {
-	visibility: visible;
-	font-size: 0;
-}
 .cookies {
 	background-color: rgb(238, 238, 238);
 	text-align: center;
@@ -10,6 +6,7 @@
 	bottom: 0;
 	width: 100%;
 	left: 0;
+	font-size: 0;
 }
 .cookies-inner {
 	padding: 10px;
