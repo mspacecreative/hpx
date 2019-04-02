@@ -24,16 +24,26 @@
 	margin: 0;
 	border-radius: 4px;
 }
+.cookies-content {
+	font-size: 14px;
+}
 .cookies button i {
 	padding: 10px 30px;
+	width: 10%;
 }
 .cookies p {
 	display: inline-block;
-	font-size: 14px;
 }
 
 @media (min-width: 981px) {
 	.cookies-content, .cookies button {
 		display: inline-block;
+	}
+	.cookies-content {
+		width: 85%;
+		margin-right: 5%;
+	}
+	.cookies button {
+		width: 10%;
 	}
 }
