@@ -1,4 +1,5 @@
-$('#et-top-navigation .menu-item-has-children').click(function() {
+$('#et-top-navigation .menu-item-has-children').click(function(e) {
+	e.preventDefault();
 	$(this).children('.sub-menu').slideToggle();
 	$(this).toggleClass('switch');
 });
