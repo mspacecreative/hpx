@@ -38,6 +38,7 @@
 @media (min-width: 981px) {
 	.cookies-content, .cookies button {
 		display: inline-block;
+		vertical-align: middle;
 	}
 	.cookies-content {
 		width: 85%;
