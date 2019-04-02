@@ -4,7 +4,7 @@ $('#et-top-navigation .menu-item-has-children').click(function(e) {
 	$(this).toggleClass('switch');
 });
 
-$('#et-top-navigation .menu-item-has-children > a').click(function(e) {
+$('#et-top-navigation .sub-menu a').click(function(e) {
 	e.stopPropagation();
 });
 
