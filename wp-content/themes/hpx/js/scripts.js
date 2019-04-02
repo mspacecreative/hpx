@@ -1,7 +1,11 @@
-$('#et-top-navigation .menu-item-has-children').click(function() {
-	return false;
+$('#et-top-navigation .menu-item-has-children').click(function(e) {
+	e.preventDefault();
 	$(this).children('.sub-menu').slideToggle();
 	$(this).toggleClass('switch');
+});
+
+$('#et-top-navigation .menu-item-has-children > a').click(function(e) {
+	e.stopPropagation();
 });
 
 $('.google-map').css(
