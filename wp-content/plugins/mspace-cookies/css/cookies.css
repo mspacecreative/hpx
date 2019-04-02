@@ -1,5 +1,6 @@
 #cookies {
 	visibility: visible;
+	font-size: 0;
 }
 .cookies {
 	background-color: rgb(238, 238, 238);
@@ -12,7 +13,7 @@
 }
 .cookies-inner {
 	padding: 10px;
-	max-width: 1080px;
+	max-width: 981px;
 	margin: auto;
 }
 
@@ -28,13 +29,11 @@
 }
 .cookies p {
 	display: inline-block;
+	font-size: 14px;
 }
 
 @media (min-width: 981px) {
-	.cookies-content {
-		float: left;
-	}
-	.cookies button {
-		float: right;
+	.cookies-content, .cookies button {
+		display: inline-block;
 	}
 }
