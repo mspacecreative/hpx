@@ -1,0 +1,40 @@
+#cookies {
+	visibility: visible;
+}
+.cookies {
+	background-color: rgb(238, 238, 238);
+	text-align: center;
+	z-index: 99999;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+}
+.cookies-inner {
+	padding: 10px;
+	max-width: 1080px;
+	margin: auto;
+}
+
+.cookies button {
+	display: inline-block;
+	background-color: rgb(241, 214, 0);
+	border: none;
+	margin: 0;
+	border-radius: 4px;
+}
+.cookies button i {
+	padding: 10px 30px;
+}
+.cookies p {
+	display: inline-block;
+}
+
+@media (min-width: 981px) {
+	.cookies-content {
+		float: left;
+	}
+	.cookies button {
+		float: right;
+	}
+}
