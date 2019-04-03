@@ -31,8 +31,8 @@
  						<?php if( have_rows('button_2', 'options') ): ?>
  						<div class="sticky-bar-button last">
  							<?php while( have_rows('button_2', 'options') ): the_row();
- 								$label = get_sub_field('button_label', 'options');
- 								$link = get_sub_field('button_link', 'options'); ?>
+ 								$label = get_sub_field('button_label_2', 'options');
+ 								$link = get_sub_field('button_link_2', 'options'); ?>
  							<a href="<?php echo $link; ?>" target="_blank">
  								<?php echo $label; ?>
  							</a>
