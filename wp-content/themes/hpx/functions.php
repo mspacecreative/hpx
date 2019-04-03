@@ -13,7 +13,7 @@ function et_divi_post_meta() {
 }
 endif;
 
-// THUMBNAIL SIZING
+// CUSTOM THUMBNAIL SIZING
 if (function_exists('add_theme_support'))
 {
     // Add Thumbnail Theme Support
@@ -37,22 +37,13 @@ function my_theme_enqueue_styles() {
 	wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
 	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( $parent_style ));
 	
-	//wp_register_style('para-styles', get_stylesheet_directory_uri() . '/js/dzsparallaxer/dzsparallaxer.css', array(), '1.0', 'all');
-	//wp_enqueue_style('para-styles');
-	
-	//wp_register_style('animations', get_stylesheet_directory_uri() . '/css/animations.css', array(), '1.0', 'all');
-	//wp_enqueue_style('animations');
-	
 	wp_register_style('typekit', 'https://use.typekit.net/ese1iyj.css', array(), '1.0', 'all');
 	wp_enqueue_style('typekit');
 	
-	
 }
 
+// SCRIPTS IN FOOTER
 function footer_scripts() {
-	
-	//wp_register_script('animate', get_stylesheet_directory_uri() . '/js/css3-animate-it.js', array('jquery'), null, true);
-	//wp_enqueue_script('animate');
 	
 	wp_register_script('fontawesome', 'https://use.fontawesome.com/6ccd600e51.js', array('jquery'), null, true);
 	wp_enqueue_script('fontawesome');
@@ -63,54 +54,44 @@ function footer_scripts() {
 	wp_register_script('scripts', get_stylesheet_directory_uri() . '/js/scripts.js', array('jquery'), null, true);
 	wp_enqueue_script('scripts');
 	
-	//wp_register_script('para-script', get_stylesheet_directory_uri() . '/js/dzsparallaxer/dzsparallaxer.js', array('jquery'), null, true);
-	//wp_enqueue_script('para-script');
 }
 
 /* ACF OPTIONS PAGE */
 if( function_exists('acf_add_options_sub_page') ) {
 
 	acf_add_options_sub_page('Footer');
-	acf_add_options_sub_page('Call-out Box');
-	acf_add_options_sub_page('Team Page');
+	acf_add_options_sub_page('Sticky Navigation Bar');
 	
 }
 
-/*function posts_sidebar() {
-	register_sidebar( array(
-		'name' => esc_html__( 'Blog Sidebar', 'ahbrsc' ),
-		'id' => 'blog-sidebar',
-		'before_widget' => '<div id="%1$s" class="et_pb_widget %2$s">',
-		'after_widget' => '</div> <!-- end .et_pb_widget -->',
-		'before_title' => '<h3 class="widgettitle">',
-		'after_title' => '</h3>',
-	) );
-}*/
-
+// REMOVE EXTRA REGISTERED DIVI SIDEBARS
 function remove_FooterArea6() {
 	unregister_sidebar('sidebar-6');
 	unregister_sidebar('sidebar-7');
 }
 
-// ARTISTS LOOP SHORTCODE
+// ARTISTS LOOP ON HOME PAGE
 function artistsLoop() {
 	ob_start();
 		get_template_part('includes/loops/loop-artists');
 	return ob_get_clean();
 }
 
+// ARTISTS LOOP ON LINEUP PAGE
 function artistsLoopFull() {
 	ob_start();
 		get_template_part('includes/loops/loop-artists-full');
 	return ob_get_clean();
 }
 
+// ARTISTS LOOP ON LINEUP PAGE – MASONRY STYLE
 function artistsLoopFull2() {
 	ob_start();
 		get_template_part('includes/loops/loop-artists-full-2');
 	return ob_get_clean();
 }
 
+// COMEDIANS LOOP ON INDEX PAGE
 function comediansLoopFull() {
 	ob_start();
 		get_template_part('includes/loops/loop-comedians-full');
@@ -197,7 +178,6 @@ add_shortcode( 'sponsor_logos_home', 'sponsorLogos' );
 add_shortcode( 'sponsor_page_logos', 'sponsorPageLogos' );
 add_shortcode( 'mailchimp_form', 'mailChimpForm' );
 add_shortcode( 'sponsor_logos_footer', 'sponsorLogosFooter' );
-//add_shortcode('content_block', 'content_blocks');
 
 // CUSTOM THUMBNAIL IN BACKEND
 add_filter( 'image_size_names_choose', 'my_custom_sizes' );

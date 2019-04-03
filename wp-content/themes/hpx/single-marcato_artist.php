@@ -9,9 +9,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 ?>
 
 <div id="main-content">
-	<?php get_template_part('includes/sticky-bar');
-	
-		if ( et_builder_is_product_tour_enabled() ):
+	<?php if ( et_builder_is_product_tour_enabled() ):
 			// load fullwidth page in Product Tour mode
 			while ( have_posts() ): the_post(); ?>
 

@@ -128,57 +128,6 @@ html {
 	color: #fff;
 }
 
-/* =============================================
-STICKY BAR
-==============================================*/
-
-.sticky-bar {
-	background: rgba(255, 255, 255, .68);
-	width: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 10;
-}
-
-.sticky-bar-inner {
-	text-align: center;
-}
-
-.sticky-bar-inner-center {
-	max-width: 850px;
-	margin: auto;
-}
-
-.sticky-bar-button.first {
-	float: left;
-	padding: 8px 17px;
-}
-
-.sticky-bar-button.last {
-	float: right;
-	padding: 8px 17px;
-}
-
-.sticky-bar-button a {
-	background-color: #3fc1c0;
-	border-color: #3fc1c0;
-	color: #fff;
-	padding: 6px 20px;
-	font-family: oswald, sans-serif;
-	font-size: 20px;
-	font-weight: 400;
-	font-style: normal;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	display: block;
-	line-height: normal;
-}
-
-/* =============================================
-END STICKY BAR
-==============================================*/
-
 .entry-content h1, #content-area h1 {
 	font-family: fatfrank;
 	font-weight: 700;
