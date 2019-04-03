@@ -14,7 +14,11 @@
  
  function stickyBar() {
  		ob_start(); ?>
+ 		<?php if ( get_field('hide_bar', 'options') ): ?>
+	 		<div class="sticky-bar" style="display: none;">
+	 	<?php else : ?>
  			<div class="sticky-bar">
+ 		<?php endif; ?>
  				<div class="sticky-bar-inner">
  					<div class="sticky-bar-inner-center clearfix">
  						<?php if( have_rows('button_1', 'options') ): ?>
