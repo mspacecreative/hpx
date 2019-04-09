@@ -374,6 +374,7 @@ footer p {
 .single #main-content .container {
 	max-width: none;
 	width: 90%;
+	padding-bottom: 20px;
 }
 
 .et_pb_gallery_fullwidth .et_pb_gallery_image img {
