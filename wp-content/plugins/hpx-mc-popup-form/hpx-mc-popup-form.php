@@ -30,7 +30,7 @@
 					<?php endif; ?>
 					
 					<?php if ( get_field('insider_content', 'options') ): ?>
- 					<p><?php the_field('insider_title', 'options') ?></p>
+ 					<p><?php the_field('insider_content', 'options') ?></p>
  					<?php endif; ?>
  					
  					<?php echo do_shortcode('[mailchimp_form]'); ?>
