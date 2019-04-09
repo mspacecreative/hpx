@@ -19,7 +19,7 @@ body .modalContent .content__titleDescription div div span span {
 	position: fixed;
 	height: 100%;
 	width: 100%;
-	z-index: 99999;
+	z-index: 999999;
 	top: 0;
 	left: 0;
 	background-color: rgba(0, 0, 0, .80);
