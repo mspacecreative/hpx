@@ -133,6 +133,17 @@ $('.close-cookies').click(function() {
 	$(this).parent().parent().fadeOut();
 });
 
+if ($.cookie('popup') == 'closed') {
+	$('.cookies-mc').hide();
+} else {
+    $('.cookies-mc').delay(5000).fadeIn();
+}
+
+$('.mc-popup-form .fa.fa-close').click(function () {
+	$.cookie('popup','closed', { path: '/' });
+	$(this).parent().parent().parent().fadeOut();
+});
+
 /*$('.cta-button').click(function() {
 	$.cookie('notice','closed', { path: '/' });
 	$(this).parent().parent().parent().fadeOut();

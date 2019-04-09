@@ -1,0 +1,59 @@
+body .mc-modal-bg {
+	z-index: 99999;
+}
+
+body .mc-modal {
+	z-index: 999999;
+}
+
+body .modalContent .content__titleDescription div div span span {
+	font-family: fatfrank!important;
+	font-weight: 700!important;
+	font-style: normal!important;
+	letter-spacing: .08em!important;
+	font-size: 37.5px!important;
+	margin: 0 0 25px!important;
+}
+
+.mc-popup-form-bg {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .80);
+	z-index: 999999;
+}
+
+.mc-popup-form {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	max-width: 600px;
+	width: 80%;
+	padding: 40px 40px 30px;
+	background-color: #fff;
+	text-align: center;
+}
+
+.mailchimp-container.mc-popup-form #mc_embed_signup .mc-field-group {
+	width: 100%;
+	display: block;
+	margin: 0 0 20px;
+}
+
+.mc-popup-form .fa.fa-close {
+	color: #fff;
+	font-size: 25px;
+	position: absolute;
+	top: -25px;
+	right: -25px;
+	cursor: pointer;
+}
+
+.mailchimp-container.mc-popup-form #mc_embed_signup .clear {
+	display: block;
+	width: auto;
+}
