@@ -29,7 +29,7 @@ button.hamburger:hover {
 
 .mobile-nav {
 	position: fixed;
-	right: -250px;
+	right: 0;
 	width: 250px;
 	transition: 0.5s ease-in-out;
 	height: 100%;
@@ -38,6 +38,7 @@ button.hamburger:hover {
 	visibility: hidden;
 	background: #f9f9f9;
 	z-index: 1;
+	transform: translateX(250px);
 }
 
 .sub-toggle .fa {
@@ -85,9 +86,9 @@ button.hamburger:hover {
 }
 
 .is-active .mobile-nav, #page-container.is-active {
-	right: 0;
 	transition: 0.5s ease-in-out;
 	visibility: visible;
+	transform: translateX(0);
 }
 
 #page-container.is-active {
@@ -133,13 +134,13 @@ body .hamburger:hover {
   font-size: 20px;
 }
 
-.hamburger.is-active, body.is-active.et_non_fixed_nav #main-header {
+.hamburger.is-active, body.is-active #main-header {
 	transform: translateX(-250px);
 	transition: 0.5s ease-in-out;
 	
 }
 
-body.et_non_fixed_nav #main-header {
+body #main-header {
 	transform: translateX(0);
 	transition: 0.5s ease-in-out;
 }
