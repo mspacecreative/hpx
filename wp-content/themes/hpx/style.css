@@ -30,7 +30,7 @@ html {
 }
 
 @media (min-width: 981px) {
-	.et_vertical_nav #page-container #main-header {
+	.et_vertical_nav #main-header {
 		width: 184px;
 		padding-top: 18px;
 		background: #f9f9f9;
