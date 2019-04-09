@@ -23,7 +23,10 @@ body .modalContent .content__titleDescription div div span span {
 	top: 0;
 	left: 0;
 	background-color: rgba(0, 0, 0, .80);
-	z-index: 999999;
+}
+
+.cookies-mc {
+	display: none;
 }
 
 .mc-popup-form {
