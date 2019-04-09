@@ -136,12 +136,12 @@ $('.close-cookies').click(function() {
 if ($.cookie('popup') == 'closed') {
 	$('.cookies-mc').hide();
 } else {
-    $('.cookies-mc').delay(5000).fadeIn();
+    $('.cookies-mc').show();
 }
 
 $('.mc-popup-form .fa.fa-close').click(function () {
 	$.cookie('popup','closed', { path: '/' });
-	$(this).parent().parent().parent().fadeOut();
+	$(this).parent().parent().fadeOut();
 });
 
 /*$('.cta-button').click(function() {
