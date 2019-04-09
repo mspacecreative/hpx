@@ -13,6 +13,10 @@
  	wp_enqueue_script( 'popup-script', plugin_dir_url( __FILE__ ) . 'js/popup.js', array( 'jquery' ), null, true );
  }
  
+ if( function_exists('acf_add_options_sub_page') ) {
+ 	acf_add_options_sub_page('MailChimp');
+ }
+ 
  function popupWindow() {
  	ob_start(); ?>
  		
@@ -20,9 +24,17 @@
  			<div class="mc-popup-form-bg">
  				<div class="mc-popup-form mailchimp-container">
  					<i class="fa fa-close"></i>
- 					<h3>HPX Insiders</h3>
- 					<p>Sign up for our e-newsletter and receive exclusive deals, first looks, and more!</p>
- 						<?php echo do_shortcode('[mailchimp_form]'); ?>
+ 					
+ 					<?php if ( get_field('insider_title', 'options') ): ?>
+					<h3><?php the_field('insider_title', 'options') ?></h3>
+					<?php endif; ?>
+					
+					<?php if ( get_field('insider_content', 'options') ): ?>
+ 					<p><?php the_field('insider_title', 'options') ?></p>
+ 					<?php endif; ?>
+ 					
+ 					<?php echo do_shortcode('[mailchimp_form]'); ?>
+ 					
  				</div>
  			</div>
  		</div>
@@ -30,11 +42,5 @@
  	<?php echo ob_get_clean();
  }
  	
- add_action( 'wp_footer', 'popupWindow', 200 );
+ add_action( 'wp_footer', 'popupWindow' );
  add_action( 'wp_enqueue_scripts', 'popupStyles' );
- 
-	/*if ( get_field('mc_popup_form', 'options') ): ?>
- 	<div class="mc-popup-form">
- 		<?php the_field('mc_popup_form', 'options'); ?>
- 	</div>
- 	<?php endif;*/

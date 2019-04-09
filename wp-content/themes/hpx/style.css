@@ -34,6 +34,8 @@ html {
 		width: 184px;
 		padding-top: 18px;
 		background: #f9f9f9;
+		position: fixed;
+		top: 0;
 	}
 	.artist-videos {
 		display: flex;
