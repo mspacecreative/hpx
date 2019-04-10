@@ -38,4 +38,3 @@
  
  add_action( 'wp_head', 'mobilenavPlugin' );
  add_action( 'wp_enqueue_scripts', 'off_canvas_menu' );
- add_action( 'after_setup_theme', 'hamburger_menu' );
