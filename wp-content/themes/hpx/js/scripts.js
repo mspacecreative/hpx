@@ -1,10 +1,11 @@
-$('#et-top-navigation .menu-item-has-children').click(function(e) {
-	e.preventDefault();
+$('#et-top-navigation li.menu-item-has-children').on('click touchstart', function () {
 	$(this).children('.sub-menu').slideToggle();
 	$(this).toggleClass('switch');
 });
 
-$('#et-top-navigation .sub-menu a').click(function(e) {
+$('#et-top-navigation .menu-item-has-children').css('cursor', 'pointer');
+
+$('#et-top-navigation .sub-menu li a').click(function(e) {
 	e.stopPropagation();
 });
 

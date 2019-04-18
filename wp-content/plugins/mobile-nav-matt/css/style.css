@@ -164,7 +164,7 @@ body .hamburger:after {
 }
 
 body .hamburger-inner, body .hamburger-inner:after, body .hamburger-inner:before {
-	background: #0d2154;
+	background: #000;
 	width: 30px;
 	border-radius: 0;
 }
