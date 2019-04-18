@@ -5,7 +5,7 @@ $('#et-top-navigation li.menu-item-has-children').on('click touchstart', functio
 
 $('#et-top-navigation .menu-item-has-children').css('cursor', 'pointer');
 
-$('#et-top-navigation .sub-menu li a').click(function(e) {
+$('#et-top-navigation .sub-menu li').on('click touchstart', function (e) {
 	e.stopPropagation();
 });
 
