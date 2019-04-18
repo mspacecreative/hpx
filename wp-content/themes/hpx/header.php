@@ -23,8 +23,6 @@
 	<script type="text/javascript">
 		document.documentElement.className = 'js';
 	</script>
-
-	<?php wp_head(); ?>
 	
 	<!-- Facebook Pixel Code -->
 	<script>
@@ -44,6 +42,8 @@
 	       src="https://www.facebook.com/tr?id=1443610629101915&ev=PageView&noscript=1"/>
 	</noscript>
 	<!-- End Facebook Pixel Code -->
+
+	<?php wp_head(); ?>
 	
 </head>
 <body <?php body_class(); ?>>
