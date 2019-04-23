@@ -511,6 +511,12 @@ footer p {
 	}
 }
 
+@media (max-width: 1080px) {
+	.sponsor-logo img.square-logo {
+	    padding: 20px 35px;
+	}
+}
+
 /*====================================
 ==========  END MAILCHIMP  ===========
 ====================================*/
