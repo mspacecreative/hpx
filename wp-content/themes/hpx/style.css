@@ -290,6 +290,14 @@ footer .sponsor-logo img {
 	height: auto;
 }
 
+.home .sponsor-logo img {
+	padding: 0;
+}
+
+.home .sponsor-logo img.square-logo {
+	padding: 0 20px;
+}
+
 .et_pb_equal_columns .et_pb_column .et_pb_module {
 	height: 100%;
 }
