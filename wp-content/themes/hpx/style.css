@@ -505,10 +505,14 @@ footer p {
 	}
 }
 
-@media (min-width: 320px) and (max-width: 1079px) {
+@media (min-width: 768px) and (max-width: 1079px) {
 	.sponsor-logo img {
 		margin: auto;
 		max-width: none;
+		padding: 20px 40px;
+	}
+	.sponsor-logo img.square-logo {
+	    padding: 20px 45px;
 	}
 }
 
