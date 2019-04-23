@@ -474,18 +474,6 @@ footer p {
 	}
 }
 
-@media (max-width: 812px) and (orientation: landscape) {
-	.mailchimp-container #mc_embed_signup .mc-field-group {
-		width: 31.666%;
-	}
-	.mailchimp-container #mc_embed_signup_scroll .mc-field-group:last-child {
-		margin-right: 0;
-	}
-	.mailchimp-container #mc_embed_signup .clear {
-		width: auto;
-	}
-}
-
 @media (max-width: 450px) {
 	.mailchimp-container #mc_embed_signup .mc-field-group, .mailchimp-container #mc_embed_signup .clear {
 		width: 100%;
@@ -514,6 +502,29 @@ footer p {
 @media (max-width: 1080px) {
 	.sponsor-logo img.square-logo {
 	    padding: 20px 35px;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 1079px) {
+	.sponsor-logo img {
+		margin: auto;
+		max-width: none;
+	}
+}
+
+@media (max-width: 812px) and (orientation: landscape) {
+	.mailchimp-container #mc_embed_signup .mc-field-group {
+		width: 31.666%;
+	}
+	.mailchimp-container #mc_embed_signup_scroll .mc-field-group:last-child {
+		margin-right: 0;
+	}
+	.mailchimp-container #mc_embed_signup .clear {
+		width: auto;
+	}
+	.sponsor-logo img {
+		margin: auto;
+		max-width: 60%;
 	}
 }
 
