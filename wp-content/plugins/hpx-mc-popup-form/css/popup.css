@@ -65,10 +65,16 @@ body .modalContent .content__titleDescription div div span span {
 	.mailchimp-container.mc-popup-form #mc_embed_signup .mc-field-group {
 		margin: 0 0 10px;
 	}
+	.mc-popup-form {
+		padding: 20px 20px 15px;
+	}
 }
 
 @media (max-width: 450px) {
 	.mailchimp-container.mc-popup-form #mc_embed_signup .mc-field-group {
 		margin: 0 0 10px;
+	}
+	.mc-popup-form {
+		padding: 20px 20px 15px;
 	}
 }
