@@ -238,7 +238,7 @@ body #page-container .et_pb_button.cta_button.green_txt_button:hover, .cta_butto
 }
 
 .square-logo {
-	max-width: 115px;
+	padding: 20px 45px;
 }
 
 .artist-thumb:nth-child(5n+1):nth-last-child(-n+5),
